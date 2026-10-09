@@ -547,6 +547,56 @@ textarea {
   line-height: 1.8;
 }
 
+.photo-story,
+.destination-gallery {
+  padding-top: 20px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.photo-tile {
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+}
+
+.photo-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.photo-tile:hover img {
+  transform: scale(1.04);
+  filter: saturate(1.1);
+}
+
+.photo-tile-tall {
+  grid-row: span 2;
+  min-height: 470px;
+}
+
+.photo-tile-wide {
+  grid-column: span 2;
+}
+
+.destinations-grid {
+  margin-top: 24px;
+}
+
+.compact {
+  margin-bottom: 20px;
+}
+
 .craft {
   min-height: 100vh;
   display: grid;
