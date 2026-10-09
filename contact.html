@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты — North Arc</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell inner-page">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="North Arc home">
+          <span class="brand-mark">N</span>
+          <span>North Arc</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="index.html#signature">Главная</a>
+          <a href="destinations.html">Направления</a>
+          <a href="experience.html">Подход</a>
+          <a href="#inquiry">Заявка</a>
+        </nav>
+
+        <a class="nav-cta" href="#inquiry">Построить маршрут</a>
+      </header>
+
+      <main class="inner-main">
+        <section class="page-hero compact-screen contact-hero" id="inquiry">
+          <div class="page-copy narrow">
+            <p class="section-kicker">Контакты</p>
+            <h1>Начните свой маршрут по Восточной Азии.</h1>
+          </div>
+        </section>
+
+        <section class="contact-panel">
+          <form class="inquiry-form">
+            <div class="field-row">
+              <label>
+                Имя
+                <input type="text" name="name" placeholder="Ваше имя" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+            </div>
+
+            <label>
+              Направление
+              <input type="text" name="destination" placeholder="Япония, Корея, Китай или несколько стран" required />
+            </label>
+
+            <label>
+              Срок поездки
+              <input type="text" name="timeline" placeholder="Например: апрель 2027 / 10 ночей" required />
+            </label>
+
+            <label>
+              Комментарии
+              <textarea rows="5" name="notes" placeholder="Расскажите, как вы путешествуете, что для вас важно, и какой опыт вы хотите получить." required></textarea>
+            </label>
+
+            <button type="submit" class="primary-btn">Отправить заявку</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer simple-footer">
+        <div>
+          <p class="section-kicker">North Arc</p>
+          <h3>hello@northarc.travel</h3>
+        </div>
+        <a href="mailto:hello@northarc.travel" class="text-link">Написать нам</a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
